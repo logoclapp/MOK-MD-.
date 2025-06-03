@@ -9,7 +9,14 @@ bot(
   async (message, match) => {
     if (!match)
       return await message.send(
-        '>*Example :\n- gpt What is the capital of France?\n- gpt Whats in this image?(reply to a image)'
+        `╭━━〔 *🤖 MOK MD - GPT AI* 〕━━⬣
+┃
+┃ *🧠 Example Commands :*
+┃
+┃ ➤ gpt What is the capital of France?
+┃ ➤ gpt What's in this image? (reply to image)
+┃
+╰━━━━━━━━━━━━━━━━━━⬣`
       )
     let image
     if (message.reply_message && message.reply_message.image) {
@@ -29,7 +36,12 @@ bot(
   async (message, match) => {
     if (!match)
       return await message.send(
-        '*Example : dall a close up, studio photographic portrait of a white siamese cat that looks curious, backlit ears*'
+        `╭━━〔 *🎨 MOK MD - DALL·E* 〕━━⬣
+┃
+┃ *🎯 Example :*
+┃ ➤ dall a close up, studio photographic portrait of a white siamese cat that looks curious, backlit ears
+┃
+╰━━━━━━━━━━━━━━━━━━⬣`
       )
     const res = await getDallEResponse(match, message.id)
     await message.sendFromUrl(res)
