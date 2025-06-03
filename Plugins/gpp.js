@@ -1,5 +1,10 @@
 const { bot, isAdmin, lang } = require('../lib/')
 
+const boxify = (text) => {
+  const line = '═'.repeat(text.length + 4)
+  return `╔${line}╗\n║  ${text}  ║\n╚${line}╝`
+}
+
 bot(
   {
     pattern: 'gpp ?(.*)',
@@ -12,14 +17,18 @@ bot(
     if (isRestrict) {
       const participants = await message.groupMetadata(message.jid)
       const isImAdmin = await isAdmin(participants, message.client.user.jid)
-      if (!isImAdmin) return await message.send(lang.plugins.common.not_admin)
+      if (!isImAdmin)
+        return await message.send(boxify(lang.plugins.common.not_admin))
     }
+
     if (!message.reply_message || !message.reply_message.image)
-      return await message.send(lang.plugins.common.reply_to_image)
+      return await message.send(boxify(lang.plugins.common.reply_to_image))
+
     await message.updateProfilePicture(
       await message.reply_message.downloadMediaMessage(),
       message.jid
     )
-    return await message.send(lang.plugins.gpp.update)
+
+    return await message.send(boxify(lang.plugins.gpp.update))
   }
 )
