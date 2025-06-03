@@ -21,4 +21,5 @@ bot(
       await message.sendFromUrl(result[i], { buffer: false })
     }
   }
-)
+
+  )
