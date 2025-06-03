@@ -8,6 +8,7 @@ const {
   bot,
   lang,
 } = require('../lib/')
+
 bot(
   {
     pattern: 'help ?(.*)',
@@ -33,7 +34,7 @@ bot(
         getUptime('t'),
         getPlatform()
       ),
-      '╭────────────────',
+      '╭─𖤐────𖤐────𖤐─╮',
     ]
 
     sorted.forEach((command, i) => {
@@ -47,7 +48,7 @@ bot(
       }
     })
 
-    CMD_HELP.push('╰────────────────')
+    CMD_HELP.push('╰─𖤐────𖤐────𖤐─╯')
 
     return await message.send(CMD_HELP.join('\n'))
   }
@@ -65,12 +66,16 @@ bot(
 
     const commandList = sorted
       .filter((command) => !command.dontAddCommandList && command.pattern !== undefined)
-      .map((command) => `- *${command.name}*\n${command.desc}\n`)
-      .join('\n')
+      .map(
+        (command, i) =>
+          `🕸️ ${i + 1}. ⚜️ *${textToStylist(command.name.toUpperCase(), 'mono')}*\n     𝔇𝔢𝔰𝔠: ${command.desc}`
+      )
+      .join('\n\n')
 
     await message.send(commandList)
   }
 )
+
 bot(
   {
     pattern: 'menu ?(.*)',
@@ -109,24 +114,24 @@ bot(
     msg += '\n'
 
     if (match && commands[match]) {
-      msg += ` ╭─❏ ${textToStylist(match.toLowerCase(), 'smallcaps')} ❏\n`
+      msg += `╭─𖤐 ${textToStylist(match.toLowerCase(), 'smallcaps')} 𖤐─╮\n`
       commands[match]
         .sort((a, b) => a.localeCompare(b))
         .forEach((plugin) => {
-          msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
+          msg += `│ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
         })
-      msg += ` ╰─────────────────`
+      msg += `╰─𖤐─────────────𖤐─╯`
       return await message.send(msg)
     }
 
     for (const command of sortedCommandKeys) {
-      msg += ` ╭─❏ ${textToStylist(command.toLowerCase(), 'smallcaps')} ❏\n`
+      msg += `╭─𖤐 ${textToStylist(command.toLowerCase(), 'smallcaps')} 𖤐─╮\n`
       commands[command]
         .sort((a, b) => a.localeCompare(b))
         .forEach((plugin) => {
-          msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
+          msg += `│ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
         })
-      msg += ` ╰─────────────────\n`
+      msg += `╰─𖤐─────────────𖤐─╯\n`
     }
 
     await message.send(msg.trim())
