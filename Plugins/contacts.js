@@ -22,54 +22,72 @@ bot(
         !message.reply_message.mimetype ||
         !message.reply_message.mimetype.endsWith('vcard')
       ) {
-        return await message.send('Reply to a VCF backup file.')
+        return await message.send('*Reply to a VCF file.*')
       }
       const vcfData = await message.reply_message.downloadMediaMessage()
       const contacts = await importContacts(vcfData, message)
 
       if (contacts.length === 0) {
-        return await message.send('No contacts found in the VCF file.')
+        return await message.send('*No contacts found.*')
       }
 
-      let msg = `Total contacts: *${contacts.length}*`
+      let msg = `╭━━〔 *📇 MOK MD - Contacts Imported* 〕━━⬣\n┃\n┃ Total: *${contacts.length}*`
       contacts.forEach((contact, i) => {
-        msg += `\n${i + 1}. *${contact.name}* : ${contact.phone}`
+        msg += `\n┃ ${i + 1}. *${contact.name}* : ${contact.phone}`
       })
+      msg += `\n╰━━━━━━━━━━━━━━━━━━━━⬣`
       return await message.send(msg)
     }
+
     if (match === 'list') {
       const contacts = await listContacts(message.id)
-      let msg = `Total contacts: *${contacts.length}*\n`
+      let msg = `╭━━〔 *📋 MOK MD - Contacts List* 〕━━⬣\n┃\n┃ Total: *${contacts.length}*`
       contacts.forEach((contact, i) => {
-        msg += `\n${i + 1}. *${contact.name}* : ${jidToNum(contact.jid)}`
+        msg += `\n┃ ${i + 1}. *${contact.name}* : ${jidToNum(contact.jid)}`
       })
+      msg += `\n╰━━━━━━━━━━━━━━━━━━━━⬣`
       return await message.send(msg)
     }
+
     if (match === 'save') {
       const savedContacts = await saveContacts(message.id)
-      return await message.send(`saved ${savedContacts.length} contacts`)
+      return await message.send(`✅ Saved: *${savedContacts.length}* contacts.`)
     }
+
     if (match === 'flush') {
       await removeContacts('all', message.id)
-      return await message.send('removed all')
+      return await message.send('🗑️ All contacts removed.')
     }
+
     if (match.startsWith('delete')) {
       const contactNumber = match.replace('delete', '').trim()
       const isRemoved = await removeContacts(contactNumber, message.id)
-      return await message.send(isRemoved ? 'removed' : `${contactNumber} not exist in contacts`)
+      return await message.send(isRemoved ? '✅ Removed.' : '❌ Not found.')
     }
+
     if (match.startsWith('add')) {
       const [contactName, contactNumber] = match.replace('add', '').trim().split(',')
       const isAdded = await addContacts(contactName, contactNumber, message.id)
-      return await message.send(isAdded.length ? 'added' : 'failed')
+      return await message.send(isAdded.length ? '✅ Added.' : '❌ Failed.')
     }
+
     if (match.startsWith('exist')) {
       const contactNumber = match.replace('exist', '').trim()
       const exist = await existContacts(contactNumber, message.id)
-      return await message.send(exist ? 'exist' : 'no exist')
+      return await message.send(exist ? '✅ Exists.' : '❌ Not exists.')
     }
+
     return await message.send(
-      "Example\n- contacts import (import contacts from vcf backup file)\n- contacts flush (remove contacts in db or imported)\n- contacts save (save imported contacts to db)\n- contact list (show contacts in db)\n- contacts delete 9876543210 (remove 9876543210 from contacts)\n- contacts add name,9876543210 (adds name to contacts with number 9876543210)\n- contact exist 9876543210 (check number exist in contacts)\n\n\n> Before saving imported contacts (You have to save contacts after verifying the imported contacts), make sure to not list contacts who are not on WhatsApp. Also, remove those who don't want to send statuses from the VCF file before importing."
+      `╭━━〔 *📱 MOK MD - Contact Manager* 〕━━⬣
+┃
+┃ • contacts import
+┃ • contacts flush
+┃ • contacts save
+┃ • contacts list
+┃ • contacts delete <number>
+┃ • contacts add <name>,<number>
+┃ • contacts exist <number>
+╰━━━━━━━━━━━━━━━━━━━━⬣`
     )
   }
 )
