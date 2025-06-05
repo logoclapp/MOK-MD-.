@@ -11,7 +11,7 @@
     "reconnect": "[{0}] Reconectando...({1})",
     "reconnect_after": "[{0}] Reconectar despues de 1 minuto",
     "another_login": "[{0}] La Sesion se ha iniciado en otro dispositivo.",
-    "error_message": "```---REPORTE DE ERROR---\n\nVersion : {0}\nMensaje : {1}\nError   : {2}\nJid     : {3}\nComando : {4}\nPlataforma : {5}```\n\n```-----``` *Hecho por LyFE con mucho Amor ❣* ```-----```",
+    "error_message": "```---REPORTE DE ERROR---\n\nVersion : {0}\nMensaje : {1}\nError   : {2}\nJid     : {3}\nComando : {4}\nPlataforma : {5}```\n\n```-----``` *Hecho por PSUXIN con mucho Amor ❣* ```-----```",
     "deleted_message": "MensajeBorrado",
     "install_external_plugin": "[{0}] Instalando Plugins Externos...",
     "installed_external_plugin": "[{0}] Plugins Externos Instalados.",
@@ -31,8 +31,7 @@
     },
     "menu": {
       "help": "```╭────────────────╮\n      ʟᴇᴠᴀɴᴛᴇʀ\n╰────────────────╯\n\n╭────────────────\n│ Prefijo : {0}\n│ Usuario : {1}\n│ Hora : {2}\n│ Dia : {3}\n│ Fecha : {4}\n│ Version : {5}\n│ Plugins : {6}\n│ RAM : {7}\n│ Encendido : {8}\n│ Plataforma : {9}\n╰────────────────```",
-      "menu": "```╭═══ LEVANTER ═══⊷\n┃❃╭──────────────\n┃❃│ Prefijo : {0}\n┃❃│ Usuario : {1}\n┃❃│ Hora : {2}\n┃❃│ Dia : {3}\n┃❃│ Fecha : {4}\n┃❃│ Version : {5}\n┃❃│ Plugins : {6}\n┃❃│ RAM : {7}\n┃❃│ Encendido : {8}\n┃❃│ Plataforma : {9}\n┃❃╰───────────────\n╰═════════════════⊷```"
-    },
+      "menu": "```⬛━━━━━━⬛  𖤐 𝙈𝙊𝙆-𝙈𝘿   ⬛━━━━━━⬛\n┃❃⬛━━━━━━⬛\n┃❃│ Prefijo : {0}\n┃❃│ Usuario : {1}\n┃❃│ Hora : {2}\n┃❃│ Dia : {3}\n┃❃│ Fecha : {4}\n┃❃│ Version : {5}\n┃❃│ Plugins : {6}\n┃❃│ RAM : {7}\n┃❃│ Encendido : {8}\n┃❃│ Plataforma : {9}\n┃❃╰───────────────\n╰═════════════════⊷```"
     "afk": {
       "example": "> *Como Usar AFK:*\n- Set AFK: *afk [razon]*\n- Ejemplo: *afk Estoy ocupado* Visto por ultima vez: #lastseen\n- Enviar un mensaje despues de haber Activado AFK lo desactivara Automaticamente.\n- Apagar AFK: *afk off*",
       "not_afk": "Ya no estas AFK.",
@@ -158,12 +157,12 @@
     },
     "greetings": {
       "welcome_desc": "Envia Mensaje de Bienvenida a Nuevos Miembros",
-      "welcome_example": "Mensaje Actual: {0}\n\nPara mas detalles ve a: https://levanter-delta.vercel.app/",
+      "welcome_example": "Mensaje Actual: {0}\n\nPara mas detalles ve a: https://mok-delta.vercel.app/",
       "welcome_enable": "✅ _Bienvenida Activada_",
       "welcome_disable": "📴 _La Bienvenida Ahora esta Desactivada_",
       "welcome_delete": "_Mensaje de Bienvenida Borrada_",
       "goodbye_desc": "Envia Mensaje de Despedida a Miembros que Abandonan",
-      "goodbye_example": "El mensaje de despedida Actual es: {0}\n\nPara mas detalles ve a: https://levanter-delta.vercel.app/",
+      "goodbye_example": "El mensaje de despedida Actual es: {0}\n\nPara mas detalles ve a: https://mok-delta.vercel.app/",
       "goodbye_enable": "✅ _Despedida Activada_",
       "goodbye_disable": "📴 _La Despedida Ahora esta Desactivada_",
       "goodbye_delete": "_Mensaje de Despedida Borrado_"
@@ -183,7 +182,7 @@
       "desc": "Añade miembros al Grupo",
       "warning": "> Agrega solo a personas a las que te tengan Agendado o tu numero sera BANEADO.",
       "not_admin": "No soy Admin, no puedo Añadir :c",
-      "invalid_number": "Cita o Menciona un Numero correcto para Añadir. Ejemplo: add 91987654321",
+      "invalid_number": "Cita o Menciona un Numero correcto para Añadir. Ejemplo: add 18293489001",
       "failed": "No se Pudo Agregar. Se le ha enviado una Invitacion"
     },
     "promote": {
@@ -531,7 +530,7 @@
       "error": "Falta la clave API. Configure su clave API y Cita una Imagen."
     },
     "setschedule": {
-      "usage": "> *Ejemplo :*\n- `setschedule` jid,minuto-hora-dia-mes (en formato de 24 horas, día y mes opcionales)\n- `setschedule` 91987654321@s.whatsapp.net, 9-9-13-8\n- `setschedule` 91987654321@s.whatsapp.net, 0-10 (enviar mensaje diariamente a las 10 am)\n- `setschedule` 91987654321@s.whatsapp.net, 0-10, once (enviar mensaje a las 10 am, una vez)",
+      "usage": "> *Ejemplo :*\n- `setschedule` jid,minuto-hora-dia-mes (en formato de 24 horas, día y mes opcionales)\n- `setschedule` 18293489001@s.whatsapp.net, 9-9-13-8\n- `setschedule` 91987654321@s.whatsapp.net, 0-10 (enviar mensaje diariamente a las 10 am)\n- `setschedule` 91987654321@s.whatsapp.net, 0-10, once (enviar mensaje a las 10 am, una vez)",
       "desc": "Programar el envío de un mensaje en un chat y fecha específico. ",
       "invalid": "Formato o horario Invalido. Siga uno de los ejemplos.",
       "no_reply": "Cita el mensaje a programar el envio.",
