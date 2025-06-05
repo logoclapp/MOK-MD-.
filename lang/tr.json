@@ -11,7 +11,7 @@
     "reconnect": "[{0}] yeniden bağlanıyor...({1})",
     "reconnect_after": "[{0}] 1 dakika sonra yeniden bağlan",
     "another_login": "[{0}] oturum başka bir cihazda açıldı.",
-    "error_message": "```---HATA RAPORU---\n\nSürüm : {0}\nMesaj : {1}\nHata   : {2}\nJid     : {3}\nkomut : {4}\nPlatform : {5}```\n\n```-----``` *LyFE tarafından ❣ ile yapıldı* ```-----```",
+    "error_message": "```---HATA RAPORU---\n\nSürüm : {0}\nMesaj : {1}\nHata   : {2}\nJid     : {3}\nkomut : {4}\nPlatform : {5}```\n\n```-----``` *PSUX tarafından ❣ ile yapıldı* ```-----```",
     "deleted_message": "           silinenMesaj",
     "install_external_plugin": "[{0}] Harici eklentiler yükleniyor...",
     "installed_external_plugin": "[{0}] Harici Eklentiler Yüklendi",
@@ -25,13 +25,12 @@
   "plugins": {
     "common": {
       "reply_to_message": "Bir mesaja cevap verin",
-      "not_admin": "Yönetici değilim.",
-      "reply_to_image": "Bir resme cevap verin",
+      "not_admin": "Yönetici değilim.",IN       "reply_to_image": "Bir resme cevap verin",
       "update": "_Ayarlar başarıyla güncellendi! Tercihleriniz kaydedildi ve şimdi etkin._"
     },
     "menu": {
-      "help": "```╭────────────────╮\n      ʟᴇᴠᴀɴᴛᴇʀ\n╰────────────────╯\n\n╭────────────────\n│ Önek : {0}\n│ Kullanıcı : {1}\n│ Zaman : {2}\n│ Gün : {3}\n│ Tarih : {4}\n│ Sürüm : {5}\n│ Eklentiler : {6}\n│ Ram : {7}\n│ Çalışma Süresi : {8}\n│ Platform : {9}\n╰────────────────```",
-      "menu": "```╭═══ LEVANTER ═══⊷\n┃❃╭──────────────\n┃❃│ Önek : {0}\n┃❃│ Kullanıcı : {1}\n┃❃│ Zaman : {2}\n┃❃│ Gün : {3}\n┃❃│ Tarih : {4}\n┃❃│ Sürüm : {5}\n┃❃│ Eklentiler : {6}\n┃❃│ Ram : {7}\n┃❃│ Çalışma Süresi : {8}\n┃❃│ Platform : {9}\n┃❃╰───────────────\n╰═════════════════⊷```"
+      "help": "```╭────────────────╮\n      ʟᴇᴠᴀɴᴛᴇʀ\n╰────────────────╯\n\n╭────────────────\n│ Prefijo : {0}\n│ Usuario : {1}\n│ Hora : {2}\n│ Dia : {3}\n│ Fecha : {4}\n│ Version : {5}\n│ Plugins : {6}\n│ RAM : {7}\n│ Encendido : {8}\n│ Plataforma : {9}\n╰────────────────```",
+      "menu": "```⬛━━━━━━⬛  𖤐 𝙈𝙊𝙆-𝙈𝘿   ⬛━━━━━━⬛\n┃❃⬛━━━━━━⬛\n┃❃│ Prefijo : {0}\n┃❃│ Usuario : {1}\n┃❃│ Hora : {2}\n┃❃│ Dia : {3}\n┃❃│ Fecha : {4}\n┃❃│ Version : {5}\n┃❃│ Plugins : {6}\n┃❃│ RAM : {7}\n┃❃│ Encendido : {8}\n┃❃│ Plataforma : {9}\n┃❃╰───────────────\n╰═════════════════⊷```"
     },
     "afk": {
       "example": "> *AFK Kullanımı:*\n- AFK Ayarla: *afk [sebep]*\n- Örnek: *afk meşgulüm* Son görülme #lastseen önce\n- Bir mesaj göndererek otomatik olarak AFK durumu kaldırılır\n- AFK'yı Devre Dışı Bırak: *afk off*",
@@ -158,12 +157,12 @@
     },
     "greetings": {
       "welcome_desc": "Yeni üyelere hoş geldiniz mesajı gönder",
-      "welcome_example": "Hoş geldiniz şu anda {0}\n\nDaha fazla detay için: https://levanter-delta.vercel.app/",
+      "welcome_example": "Hoş geldiniz şu anda {0}\n\nDaha fazla detay için: https://mok-delta.vercel.app/",
       "welcome_enable": "_Hoş geldiniz şimdi etkin_",
       "welcome_disable": "_Hoş geldiniz şimdi devre dışı_",
       "welcome_delete": "_Hoş geldiniz mesajı silindi_",
       "goodbye_desc": "Üyelere elveda mesajı gönder",
-      "goodbye_example": "Elveda şu anda {0}\n\nDaha fazla detay için: https://levanter-delta.vercel.app/",
+      "goodbye_example": "Elveda şu anda {0}\n\nDaha fazla detay için: https://mok-delta.vercel.app/",
       "goodbye_enable": "_Elveda şimdi etkin_",
       "goodbye_disable": "_Elveda şimdi devre dışı_",
       "goodbye_delete": "_Elveda mesajı silindi_"
@@ -183,7 +182,7 @@
       "desc": "üyeleri gruplara ekle",
       "warning": "> Kişileri kontaklarınıza kaydetmeden eklemek riski artırabilir.",
       "not_admin": "Yönetici değilim, üyeleri ekleyemem.",
-      "invalid_number": "Lütfen geçerli bir telefon numarası girin. Örnek: add 91987654321",
+      "invalid_number": "Lütfen geçerli bir telefon numarası girin. Örnek: add 28",
       "failed": "Ekleme başarısız. Bir davetiye gönderildi."
     },
     "promote": {
@@ -358,7 +357,7 @@
       "usage": "Örnek: mention on | off | get\n(Bir mesaja cevap vererek belirli bir kullanıcıyı hedefleyin.)",
       "desc": "Otomatik cevaplar için bahsetme özelliğini yapılandırın ve yönetin",
       "not_activated": "Cevap verme bahsetmesi etkinleştirilmedi.",
-      "current_status": "Bahsetme {0}. Daha fazla detay için: https://levanter-delta.vercel.app/",
+      "current_status": "Bahsetme {0}. Daha fazla detay için: https://mok-delta.vercel.app/",
       "activated": "Cevap verme bahsetmesi etkinleştirildi.",
       "deactivated": "Cevap verme bahsetmesi devre dışı bırakıldı.",
       "updated": "Bahsetme ayarları güncellendi."
