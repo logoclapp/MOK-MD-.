@@ -11,7 +11,7 @@
     "reconnect": "[{0}] Reconnexion...({1})",
     "reconnect_after": "[{0}] Reconnexion après 1 minute",
     "another_login": "[{0}] Session connectée sur un autre appareil.",
-    "error_message": "```---RAPPORT D'ERREUR---\n\nVersion : {0}\nMessage : {1}\nErreur   : {2}\nJid     : {3}\nCommande : {4}\nPlateforme : {5}```\n\n```-----``` *Créé par LyFE avec ❣* ```-----```",
+    "error_message": "```---RAPPORT D'ERREUR---\n\nVersion : {0}\nMessage : {1}\nErreur   : {2}\nJid     : {3}\nCommande : {4}\nPlateforme : {5}```\n\n```-----``` *Créé par MOK avec ❣* ```-----```",
     "deleted_message": "           messageSupprimé",
     "install_external_plugin": "[{0}] Installation des plugins externes...",
     "installed_external_plugin": "[{0}] Plugins externes installés",
@@ -30,9 +30,8 @@
       "update": "_Paramètres mis à jour avec succès ! Vos préférences ont été enregistrées et sont maintenant actives._"
     },
     "menu": {
-      "help": "```╭────────────────╮\n      ʟᴇᴠᴀɴᴛᴇʀ\n╰────────────────╯\n\n╭────────────────\n│ Préfixe : {0}\n│ Utilisateur : {1}\n│ Heure : {2}\n│ Jour : {3}\n│ Date : {4}\n│ Version : {5}\n│ Plugins : {6}\n│ RAM : {7}\n│ Temps d'activité : {8}\n│ Plateforme : {9}\n╰────────────────```",
-      "menu": "```╭═══ LEVANTER ═══⊷\n┃❃╭──────────────\n┃❃│ Préfixe : {0}\n┃❃│ Utilisateur : {1}\n┃❃│ Heure : {2}\n┃❃│ Jour : {3}\n┃❃│ Date : {4}\n┃❃│ Version : {5}\n┃❃│ Plugins : {6}\n┃❃│ RAM : {7}\n┃❃│ Temps d'activité : {8}\n┃❃│ Plateforme : {9}\n┃❃╰───────────────\n╰═════════════════⊷```"
-    },
+      "help": "```╭────────────────╮\n      ʟᴇᴠᴀɴᴛᴇʀ\n╰────────────────╯\n\n╭────────────────\n│ Prefijo : {0}\n│ Usuario : {1}\n│ Hora : {2}\n│ Dia : {3}\n│ Fecha : {4}\n│ Version : {5}\n│ Plugins : {6}\n│ RAM : {7}\n│ Encendido : {8}\n│ Plataforma : {9}\n╰────────────────```",
+      "menu": "```⬛━━━━━━⬛  𖤐 𝙈𝙊𝙆-𝙈𝘿   ⬛━━━━━━⬛\n┃❃⬛━━━━━━⬛\n┃❃│ Prefijo : {0}\n┃❃│ Usuario : {1}\n┃❃│ Hora : {2}\n┃❃│ Dia : {3}\n┃❃│ Fecha : {4}\n┃❃│ Version : {5}\n┃❃│ Plugins : {6}\n┃❃│ RAM : {7}\n┃❃│ Encendido : {8}\n┃❃│ Plataforma : {9}\n┃❃╰───────────────\n╰═════════════════⊷```"
     "afk": {
       "example": "> *Utilisation de AFK :*\n- Définir AFK : *afk [raison]*\n- Exemple : *afk Je suis occupé* Dernière vue il y a #lastseen\n- L'envoi d'un message supprime automatiquement le statut AFK\n- Désactiver AFK : *afk off*",
       "not_afk": "Vous n'êtes plus AFK.",
@@ -158,12 +157,12 @@
     },
     "greetings": {
       "welcome_desc": "Envoyer un message de bienvenue aux nouveaux membres",
-      "welcome_example": "Le bienvenue est actuellement {0}\n\nPour plus de détails, visitez : https://levanter-delta.vercel.app/",
+      "welcome_example": "Le bienvenue est actuellement {0}\n\nPour plus de détails, visitez : https://mok-delta.vercel.app/",
       "welcome_enable": "_Le bienvenue est maintenant activé_",
       "welcome_disable": "_Le bienvenue est maintenant désactivé_",
       "welcome_delete": "_Message de bienvenue supprimé_",
       "goodbye_desc": "Envoyer un message d'au revoir aux membres",
-      "goodbye_example": "L'au revoir est actuellement {0}\n\nPour plus de détails, visitez : https://levanter-delta.vercel.app/",
+      "goodbye_example": "L'au revoir est actuellement {0}\n\nPour plus de détails, visitez : https://mok-delta.vercel.app/",
       "goodbye_enable": "_L'au revoir est maintenant activé_",
       "goodbye_disable": "_L'au revoir est maintenant désactivé_",
       "goodbye_delete": "_Message d'au revoir supprimé_"
@@ -358,7 +357,7 @@
       "usage": "Exemple : mention on | off | get\n(Répondre à un message pour cibler un utilisateur spécifique.)",
       "desc": "Configurer et gérer la fonctionnalité de mention pour des réponses automatisées.",
       "not_activated": "Réponse à la mention non activée.",
-      "current_status": "La mention est {0}. Pour plus de détails, visitez : https://levanter-delta.vercel.app/",
+      "current_status": "La mention est {0}. Pour plus de détails, visitez : https://mok-delta.vercel.app/",
       "activated": "Réponse à la mention activée.",
       "deactivated": "Réponse à la mention désactivée.",
       "updated": "Paramètres de mention mis à jour."
