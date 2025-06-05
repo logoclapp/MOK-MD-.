@@ -1,10 +1,10 @@
 
 {
   "name": "MOK-MD",
-  "description": "Best WhatsApp bot developed by Ibrahim Adams",
+  "description": "Best WhatsApp bot developed by MOK PSUXIN",
   "keywords": ["bot", "node", "baileys", "whatsapp"],
   "logo": "https://files.catbox.moe/gs4y8m.png",
-  "repository": "https://github.com/ekitale/maths-project",
+  "repository": "https://github.com/logoclapp/MOK-MD-.",
   "success_url": "/",
   "stack": "heroku-24",
   "env": {
