@@ -1,0 +1,49 @@
+{
+  "name": "MOK-MD",
+  "description": "A powerful WhatsApp Multi-Device Bot built with Baileys and enhanced by PSUXIN.",
+  "repository": "https://github.com/logoclapp/MOK-MD-",
+  "logo": "https://files.catbox.moe/gs4y8m.png",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "multi-device",
+    "mok-md",
+    "psuxin"
+  ],
+  "env": {
+    "SESSION_ID": {
+      "description": "Your WhastApp session ID",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Command prefix (eg: ., !, /)",
+      "value": "^[,!./]"
+    },
+    "SUDO": {
+      "description": "Owner WhatsApp number(s), comma separated",
+      "required": true
+    },
+    "LANGUAG": {
+      "description": "Bot language (en, fr, etc.)",
+      "value": "en"
+    },
+    "GPT": {
+      "description": "ChatGPT mode (free or pro)",
+      "value": "free"
+    },
+    "MODEL": {
+      "description": "OpenAI model",
+      "value": "gpt-3.5-turbo"
+    },
+    "REJECT_CALL": {
+      "description": "Automatically reject calls",
+      "value": "false"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
